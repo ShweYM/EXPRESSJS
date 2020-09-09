@@ -1,0 +1,17 @@
+{
+  "name": "lab02",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "Nodemon"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "description": ""
+}

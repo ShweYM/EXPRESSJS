@@ -1,0 +1,63 @@
+
+###################################
+### List Data
+
+### List all items
+GET http://localhost:3000/api/data
+
+### List items which contains title
+
+GET http://localhost:3000/api/data?title=the
+
+### List items with sorting
+
+GET http://localhost:3000/api/data?sorted=asc
+
+###################################
+### Get an Item
+
+GET http://localhost:3000/api/data/3
+
+### Get an item changing case
+
+GET http://localhost:3000/api/data/3/upper
+
+
+### /api/demo/hello
+GET http://localhost:3000/api/demo/hello
+
+
+### /api/demo/hello/world
+GET http://localhost:3000/api/demo/hello/world
+
+
+##########################
+###
+
+POST http://localhost:3000/api/data
+Content-Type: application/json
+
+{
+    "id": 99,
+    "title": "the 1234"
+}
+
+###
+POST http://localhost:3000/api/data
+Content-Type: application/x-www-form-urlencoded
+
+hello=singapore
+&name=Alex
+
+
+### Update an item
+PUT http://localhost:3000/api/data/111
+Content-Type: application/json
+
+{
+    "title" : "the updated one 128576"
+}
+
+### Delete an item
+DELETE  http://localhost:3000/api/data/1
+
