@@ -1,0 +1,40 @@
+
+###
+GET http://localhost:3000
+
+###
+GET http://localhost:3000/books
+
+###
+GET http://localhost:3000/books?published=2010&tags=NoSQL
+
+###
+GET http://localhost:3000/books/4fba97070f318c1e73763350
+
+###
+POST http://localhost:3000/books
+Content-Type: application/json
+
+{
+    "tags": ["NUS"],
+    "pages": 123,
+    "title": "New Mongo Book",
+    "authors": [],
+    "published": 2021
+}
+
+
+###
+PUT http://localhost:3000/books/5f5a23bc92fd1b5418e906d4
+Content-Type: application/json
+
+{
+    "tags": ["NUS"],
+    "pages": 123,
+    "title": "New Mongo Second Update Book",
+    "authors": [],
+    "published": 2021
+}
+
+###
+DELETE  http://localhost:3000/books/5f5a23bc92fd1b5418e906d4
